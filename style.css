@@ -28,7 +28,7 @@ h6 {
 }
 
 body {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   margin: 0;
@@ -39,8 +39,8 @@ body {
 
 .header {
   position: relative;
-  width: 1200px;
-
+  min-width: 1200px;
+  
   background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg");
   background-color: #000;
   background-position: center center;
@@ -105,11 +105,11 @@ body {
 
 .menu-link {
   position: relative;
-
+  
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-
+  
   transition: color 0.1s linear;
 }
 
@@ -118,15 +118,15 @@ body {
   display: block;
   width: 100%;
   height: 2px;
-
+  
   background-color: #fce38a;
   opacity: 0;
-
+  
   position: absolute;
   top: 100%;
   left: 0;
   z-index: 1;
-
+  
   transition: opacity 0.1s linear;
 }
 
@@ -148,7 +148,7 @@ body {
   font-weight: 700;
   line-height: 75px;
   color: #fff;
-
+  
   text-align: center;
   text-transform: uppercase;
 }
@@ -179,6 +179,8 @@ body {
 }
 
 .news-img {
+  display: block;
+  width: 100%;
   margin-right: 30px;
 }
 
@@ -186,7 +188,7 @@ body {
   padding-bottom: 15px;
   font-size: 14px;
   font-weight: 700;
-
+  
   color: #b59f5b;
   text-transform: uppercase;
 }
@@ -199,7 +201,7 @@ body {
   font-size: 20px;
   font-weight: 700;
   color: #0f0d0e;
-
+  
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -237,10 +239,10 @@ body {
 }
 
 .sidebar-title {
-  font-size: 14px;
+  font-size: 14px;  
   font-weight: 700;
   color: #0f0d0e;
-
+  
   text-transform: uppercase;
   text-align: center;
 }
@@ -252,7 +254,7 @@ body {
 
   height: 3px;
   width: 66px;
-
+  
   background-color: #b59f5b;
 }
 
@@ -274,13 +276,12 @@ body {
   font-size: 14px;
   line-height: 18px;
   font-weight: 700;
-
+  
   color: #000;
   text-transform: uppercase;
 }
 
 /* Search */
-
 .section-search {
   margin-bottom: 62px;
 }
@@ -293,13 +294,13 @@ body {
   width: 252px;
   height: 47px;
   padding-left: 20px;
-
+  
   background-color: #f4f7f6;
   font-size: 13px;
   line-height: 40px;
   color: #000;
   border: 0;
-
+  
   -webkit-appearance: none;
   -moz-appearance: none;
 }
@@ -314,31 +315,37 @@ body {
   padding: 0;
   width: 48px;
   height: 48px;
-
-  font-size: 0;
+  
   border: 0;
   cursor: pointer;
-
+  
   position: absolute;
   top: 0;
   right: 0;
   z-index: 1;
-
+  
   background-color: #b59f5b;
   background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/search.svg");
   background-repeat: no-repeat;
   background-size: 18px 18px;
   background-position: center center;
-
+  
   -webkit-appearance: none;
   -moz-appearance: none;
-
+  
   transition: background-color 0.1s linear;
 }
 
 .search-button:hover {
   background-color: #857136;
 }
+
+.visually-hidden {
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute;
+} 
 
 /* Subscribe */
 
@@ -351,19 +358,19 @@ body {
   padding: 0;
   width: 272px;
   height: 48px;
-
+  
   background-color: #b59f5b;
   border: 0;
   cursor: pointer;
-
+  
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
   color: #fff;
-
+  
   -webkit-appearance: none;
   -moz-appearance: none;
-
+  
   transition: background-color 0.1s linear;
 }
 
@@ -373,6 +380,9 @@ body {
 
 /* Tags */
 
+/* Не понимаю как растянуть блок во всю ширину,
+мне кажется, на макете иначе */
+
 .tags {
   margin-bottom: 60px;
 }
@@ -380,10 +390,10 @@ body {
 .tags-link {
   display: inline-block;
   margin: 0 5px 6px 0;
-
+  
   border: 3px solid #eee;
   text-align: center;
-
+  
   transition: border 0.1s linear;
 }
 
@@ -397,11 +407,11 @@ body {
 
 .link {
   padding: 7px 7px;
-
+  
   font-size: 12px;
   font-weight: 700;
   color: #0f0d0e;
-
+  
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -411,9 +421,20 @@ body {
 .categories-text {
   font-weight: 700;
   font-size: 14px;
-
+  
   color: #000;
   border-bottom: 1px solid #eeee;
+  
+  transition: all 0.1s linear;
+}
+
+.categories-text:hover {
+  transform: translateX(10px);
+}
+
+.text-link {
+  color: inherit;
+  text-decoration: none;
 }
 
 .suptitle-text {
@@ -435,10 +456,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  position: relative;
+  
   margin-bottom: 70px;
   height: 83px;
-
+  
   background-color: #f4f7f6;
 }
 
@@ -446,7 +468,7 @@ body {
   width: 25px;
   height: 21px;
   margin-left: 17px;
-
+  
   opacity: 0.6;
   transition: opacity 0.1s linear;
 }
