@@ -3,7 +3,6 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="style.css">
   <title>Noemi</title>
 </head>
 
@@ -57,7 +56,7 @@
           <span class="news-tags-second">Health</span>
         </div>
         <h2>
-        <a class="news-title" href="#0">Barbecue Party Tips For A Truly Amazing Event</a>
+          <a class="news-title" href="#0">Barbecue Party Tips For A Truly Amazing Event</a>
         </h2>
         <div class="news-date">June 14, 2015
           <span class="news-author">by Author Doe</span>
@@ -73,7 +72,7 @@
       <article class="news-description">
         <div class="news-tags">Art</div>
         <h2>
-        <a class="news-title" href="#0">The Principles Of Scientific Cooking</a>
+          <a class="news-title" href="#0">The Principles Of Scientific Cooking</a>
         </h2>
         <div class="news-date">June 14, 2015
           <span class="news-author">by Author Doe</span>
@@ -89,7 +88,7 @@
       <article class="news-description">
         <div class="news-tags">Art</div>
         <h2>
-        <a class="news-title" href="#0">How To Meet That Special Someone</a>
+          <a class="news-title" href="#0">How To Meet That Special Someone</a>
         </h2>
         <div class="news-date">June 14, 2015
           <span class="news-author">by Author Doe</span>
@@ -217,9 +216,12 @@
     <div class="section-search">
       <form class="search">
         <label class="search-group">
-          <input class="field" name="query" placeholder="Search..." required>
+          <span class="visually-hidden">Search news posts</span>
+          <input class="field" type="search" placeholder="Search..." required>
         </label>
-        <button class="search-button">Найти</button>
+        <button class="search-button" type="submit">
+          <span class="visually-hidden">Search button</span>
+        </button>
       </form>
     </div>
 
@@ -227,9 +229,12 @@
       <h2 class="sidebar-title">Newsletter</h2>
       <form class="subscribe-form">
         <label class="field-group">
+          <span class="visually-hidden">Subscribe on news by email</span>
           <input class="field" type="email" placeholder="Your email address" required>
         </label>
-        <button class="subscribe-button">Subscribe</button>
+        <button class="subscribe-button" type="submit">Subscribe
+          <span class="visually-hidden">Subscribe news button</span>
+        </button>
       </form>
     </section> <!-- /.subscribe -->
 
@@ -267,32 +272,38 @@
     <section class="categories">
       <h2 class="sidebar-title">Categories</h2>
 
-      <div class="categories-text">Beauty
+      <div class="categories-text">
+        <a class="text-link" href="#0">Beauty</a>
         <span class="suptitle-text">
           <sup>12</sup>
         </span>
       </div>
-      <div class="categories-text">Health
+      <div class="categories-text">
+        <a class="text-link" href="#0">Health</a>
         <span class="suptitle-text">
           <sup>4</sup>
         </span>
       </div>
-      <div class="categories-text">Lifestyle
+      <div class="categories-text">
+        <a class="text-link" href="#0">Lifestyle</a>
         <span class="suptitle-text">
           <sup>145</sup>
         </span>
       </div>
-      <div class="categories-text">Music
+      <div class="categories-text">
+        <a class="text-link" href="#0">Music</a>
         <span class="suptitle-text">
           <sup>28</sup>
         </span>
       </div>
-      <div class="categories-text">Sport
+      <div class="categories-text">
+        <a class="text-link" href="#0">Sport</a>
         <span class="suptitle-text">
           <sup>62</sup>
         </span>
       </div>
-      <div class="categories-text">Yoga
+      <div class="categories-text">
+        <a class="text-link" href="#0">Yoga</a>
         <span class="suptitle-text">
           <sup>8</sup>
         </span>
@@ -310,23 +321,32 @@
     <a href="#0">
       <img class="items-link"
         src="https://netology-code.github.io/html-2-diploma/sources/images/social/001-pinterest.svg" alt="pinterest">
+      <span class="visually-hidden">Pinterest</span>
     </a>
+
     <a href="#0">
       <img class="items-link"
         src="https://netology-code.github.io/html-2-diploma/sources/images/social/002-facebook-logo.svg" alt="facebook">
+      <span class="visually-hidden">Facebook</span>
     </a>
     <a href="#0">
       <img class="items-link" src="https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg"
         alt="tumblr">
+      <span class="visually-hidden">Tumblr</span>
     </a>
+
     <a href="#0">
       <img class="items-link" src="https://netology-code.github.io/html-2-diploma/sources/images/social/004-twitter.svg"
         alt="twitter">
+      <span class="visually-hidden">Twitter</span>
     </a>
+
     <a href="#0">
       <img class="items-link"
         src="https://netology-code.github.io/html-2-diploma/sources/images/social/005-instagram.svg" alt="instagram">
+      <span class="visually-hidden">Instagram</span>
     </a>
+
   </div>
 
   <section class="copyright">
