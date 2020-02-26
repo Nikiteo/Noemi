@@ -36,25 +36,6 @@ body {
   box-sizing: border-box;
 }
 
-/* Pixel Perfect */
-
-/* body {
-  margin: 0;
-  font-family: Open Sans, Arial, san-serif;
-  overflow-x: hidden;
-}  
-
-body::after {
-  content: url(https://github.com/netology-code/html-2-diploma/raw/master/sources/NOEMI_Modern.jpg);
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 0.3;
-  pointer-events: none;
-  z-index: 99;
-} */
-
 /* Header */
 
 .header {
